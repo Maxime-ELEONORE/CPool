@@ -1,0 +1,21 @@
+/*
+** EPITECH PROJECT, 2018
+** cat
+** File description:
+** function cat
+*/
+
+#include <unistd.h>
+
+char *cat(int ac, char *av)
+{
+    int i = 1;
+    int value = 30000;
+    char buff[value];
+    int fd;
+
+    while (i < ac){
+        fd = open(av[i],O_RDONLY); 
+        read(fd, buff,
+    }
+}
